@@ -640,8 +640,8 @@ Area of rectangle is : 120
 
 the parameters passed to a function are called actual parameters, whereas the parameters received by a function are called formal parameters.
 
->> Note: By default Go language use call by value method to pass arguments in function.
->> Go language supports two ways to pass arguments to your function:
+> Note: By default Go language use call by value method to pass arguments in function.
+> Go language supports two ways to pass arguments to your function:
  
 
 - Call by value: : In this parameter passing method, values of actual parameters are copied to function’s formal parameters and the two types of parameters are stored in different memory locations. So any changes made inside functions are not reflected in actual parameters of the caller.

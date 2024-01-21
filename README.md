@@ -191,31 +191,8 @@ Here, we use `PrintF()` function display `Hello, Aniket` accessing name variable
 `%d`: for digit
 `%f`: for floating-point number
 
-### Decision Making
 
-Conditonal Operators
-
-1. `==` or `equal to`.
-2. `!=` or `not equal to`.
-3. `<=` or `less than or equal to`.
-4. `>=` or `greater than or equal to`.
-5. `<` or `less than`. 
-6. `>` or `greater than`.
-
-**Syntax**:
-
-```go
-if name == "Aniket" {
-    // if name is equal to Aniket.
-} else if name == "H4ck3r" {
-    // if name is equal to H4ck3r.
-} else {
-    // if above code fare all false then executed.
-    return // used return keyword to exit the program.
-}
-```
-
-### loops
+### Loops
 
 What if developer needs to repeated things or code or logical functions, loops 
 will do the loopin or repeating the function code many times as you want.
@@ -242,3 +219,27 @@ for i:=1; i<10; i++ {
 Here we, define i as 1, give condition run until i is less than 10, and increment, 
 loops starts from 0, 1, 2, ... 8, 9. increments means numbers will adds in right direction of numbers line,
 if decrement then it will be reverse order.
+
+### Decision Making
+
+Conditonal Operators
+
+1. `==` or `equal to`.
+2. `!=` or `not equal to`.
+3. `<=` or `less than or equal to`.
+4. `>=` or `greater than or equal to`.
+5. `<` or `less than`. 
+6. `>` or `greater than`.
+
+**Syntax**:
+
+```go
+if name == "Aniket" {
+    // if name is equal to Aniket.
+} else if name == "H4ck3r" {
+    // if name is equal to H4ck3r.
+} else {
+    // if above code fare all false then executed.
+    return // used return keyword to exit the program.
+}
+```

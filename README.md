@@ -267,9 +267,9 @@ Here, we use `PrintF()` function display `Hello, Aniket` accessing name variable
 `%f`: for floating-point number
 
 
-#### Operators
+### Operators
 
-##### Arithmetic Operators
+#### Arithmetic Operators
 
 
 1. Addition: The `+` operator adds two operands. For example, `x+y`.
@@ -300,7 +300,7 @@ Here, we use `PrintF()` function display `Hello, Aniket` accessing name variable
    fmt.Printf("\nResult of p %% q = %d", result5) 
 ```
 
-##### Relational Operators
+#### Relational Operators
 
 
 1. `==` (Equal To) operator checks whether the two given operands are equal or not. If so, it returns true. Otherwise, it returns false. For example, `5 == 5` will return true.
@@ -336,7 +336,7 @@ Here, we use `PrintF()` function display `Hello, Aniket` accessing name variable
    fmt.Println(result6) 
 ```
 
-##### Logical Operators
+#### Logical Operators
 
 
 1. Logical `AND`: The `&&` operator returns true when both the conditions in consideration are satisfied. Otherwise it returns false. For example, `a && b` returns true when both a and b are true (i.e. non-zero).
@@ -357,7 +357,7 @@ if(!(p==q)){
 } 
 ```
 
-##### Bitwise Operators
+#### Bitwise Operators
 
 
 1. `&` (bitwise AND): Takes two numbers as operands and does AND on every bit of two numbers. The result of AND is 1 only if both bits are 1.
@@ -394,7 +394,7 @@ if(!(p==q)){
    fmt.Printf("\nResult of p &^ q = %d", result6) 
 ```
 
-##### Assignment Operators
+#### Assignment Operators
 
 
 1. `=` (Simple Assignment): This is the simplest assignment operator. This operator is used to assign the value on the right to the variable on the left.
@@ -436,7 +436,7 @@ if(!(p==q)){
    fmt.Println(p) 
 ```
 
-##### Misc Operators
+#### Misc Operators
 
 1. `&`: This operator returns the address of the variable.
 2. `*`: This operator provides pointer to a variable.

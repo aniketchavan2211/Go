@@ -167,6 +167,9 @@ means a is differenet from 0, 1, 2. alphabets are different from numbers.
 
 #### Input
 
+When user needs to input data we use `Scan()` function which define in `fmt` package, and address with variable name
+here `&name`: `name` is is variable name and use `&` to address it.
+
 ```go
 // define variable as name and allocated spaces
 var name string 

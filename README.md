@@ -228,14 +228,11 @@ if decrement then it will be reverse order.
 
 ### Decision Making
 
-Conditonal Operators
+We use Decision making when user need make an decision based on input or result,
+example: if it's day then turn the light off, if not then turn it on.
 
-1. `==` or `equal to`.
-2. `!=` or `not equal to`.
-3. `<=` or `less than or equal to`.
-4. `>=` or `greater than or equal to`.
-5. `<` or `less than`. 
-6. `>` or `greater than`.
+here we use `if` keyword for starting an if statement, 
+then condition, if condition is true then executed code in the `{}` curly braces.
 
 **Syntax**:
 
@@ -249,3 +246,14 @@ if name == "Aniket" {
     return // used return keyword to exit the program.
 }
 ```
+
+Here are some Comparsions Operators or Conditonal Operators
+
+1. `==` or `equal to`.
+2. `!=` or `not equal to`.
+3. `<=` or `less than or equal to`.
+4. `>=` or `greater than or equal to`.
+5. `<` or `less than`. 
+6. `>` or `greater than`.
+
+

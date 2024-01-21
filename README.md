@@ -229,7 +229,7 @@ func main() {
 ```
 
 **Output**:
-```go
+```
 Length of the string is:6
 String is: Aniket
 Type of str is: string
@@ -463,7 +463,7 @@ func main() {
 ```
 
 **Output**:
-```go
+```
 4
 7
 ```
@@ -576,7 +576,7 @@ func main() {
 ```
 
 **Output**:
-```go
+```
 value is of type: <nil>
 ```
 
@@ -676,7 +676,7 @@ func main() {
 ```
 
 **Output**:
-```go
+```
 p = 10 and q = 20
 p = 10 and q = 20
 ```

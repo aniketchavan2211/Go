@@ -720,3 +720,13 @@ func main() {
 p = 10 and q = 20
 p = 20 and q = 10
 ```
+
+### Reference
+
+**Official Go DEV**: [Go Developer](https://go.dev/)
+
+1. [GeeksForGeeks.org](https://www.geeksforgeeks.org/golang/)
+
+2. [CodeAcademy.com](https://www.codecademy.com/learn/learn-go)
+
+3. [W3Schools.com](https://www.w3schools.com/go/index.php)

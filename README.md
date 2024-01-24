@@ -523,7 +523,7 @@ if name == "Aniket" {
 
 There are two types Switch Cases:
 
-1. Expression Switch Case
+1.**Expression Switch Case**
 
 Expression switch is similar to switch statement in C, C++, Java language. It provides an easy way to dispatch execution to different parts of code based on the value of the expression. 
 
@@ -554,7 +554,7 @@ func main() {
    } 
 ```
 
-2. Type Switch Case
+2. **Type Switch Case**
 
 Type switch is used when you want to compare types. In this switch, the case contains the type which is going to compare with the type present in the switch expression.
 

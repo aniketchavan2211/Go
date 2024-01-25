@@ -263,7 +263,7 @@ type struct_name struct {
 }
 ```
 
-**Accessing Values**
+##### Accessing Values
 
 Accessing Struct by passing require argument or key to return values.
 
@@ -325,7 +325,7 @@ Salary: 4500
 
 Maps are used to store data values in key:value pairs. Each element in a map is a key:value pair. A map is an unordered and changeable collection that does not allow duplicates. The length of a map is the number of its elements. You can find it using the `len()` function. The default value of a map is nil. Maps hold references to an underlying hash table. Go has multiple ways for creating maps.
 
-**Create Maps Using `var` and `:=`**
+##### Create Maps Using `var` and `:=`
 
 **Syntax**:
 ```go
@@ -353,7 +353,7 @@ a   map[brand:Ford model:Mustang year:1964]
 b   map[Bergen:2 Oslo:1 Stavanger:4 Trondheim:3]
 ```
 
-**Create Maps Using `make()` Function:**
+##### Create Maps Using `make()` Function:
 
 **Syntax**:
 ```go
@@ -389,7 +389,7 @@ a   map[brand:Ford model:Mustang year:1964]
 b   map[Bergen:2 Oslo:1 Stavanger:4 Trondheim:3]
 ```
 
-**Create an Empty Map**
+##### Create an Empty Map
 
 There are two ways to create an empty map. One is by using the `make()` function and the other is by using the following syntax.
 
@@ -438,7 +438,7 @@ Invalid key types are:
 
 These types are invalid because the equality operator `==` is not defined for them.
 
-**Access Map Elements**
+##### Access Map Elements
 
 **Syntax**:
 ```go
@@ -465,7 +465,7 @@ func main() {
 Ford
 ```
 
-**Update and Add Map Elements**
+##### Update and Add Map Elements
 
 **Syntax**:
 ```go
@@ -498,7 +498,7 @@ map[brand:Ford model:Mustang year:1964]
 map[brand:Ford color:red model:Mustang year:1970]
 ```
 
-**Remove Element from Map**
+##### Remove Element from Map
 
 Removing elements is done using the `delete()` function.
 
@@ -532,7 +532,7 @@ map[brand:Ford model:Mustang year:1964]
 map[brand:Ford model:Mustang]
 ```
 
-**Check For Specific Elements in a Map**
+##### Check For Specific Elements in a Map
 
 **Syntax**:
 ```go

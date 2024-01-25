@@ -567,7 +567,7 @@ Ford true
 true 
 ```
 
-learn more: [Maps](https://www.w3schools.com/go/go_maps.php)
+Learn more about: [Maps](https://www.w3schools.com/go/go_maps.php)
 
 ### Input / Output
 

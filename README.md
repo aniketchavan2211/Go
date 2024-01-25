@@ -1085,6 +1085,8 @@ Here we, define i as 1, give condition run until i is less than 10, and incremen
 loops starts from 0, 1, 2, ... 8, 9. increments means numbers will adds in right direction of numbers line,
 if decrement then it will be reverse order.
 
+Learn more about:[Loops](https://www.w3schools.com/go/go_loops.php)
+
 ### Decision Making
 
 We use Decision making when user need make an decision based on input or result,

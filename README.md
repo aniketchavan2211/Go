@@ -235,6 +235,340 @@ String is: Aniket
 Type of str is: string
 ```
 
+#### Struct
+
+A struct (short for structure) is used to create a collection of members of different data types, into a single variable.
+
+While arrays are used to store multiple values of the same data type into a single variable, structs are used to store multiple values of different data types into a single variable.
+
+A struct can be useful for grouping data together to create records.
+
+**Syntax**:
+```go
+type struct_name struct {
+  member1 datatype;
+  member2 datatype;
+  member3 datatype;
+  ...
+} 
+```
+
+**Snippets**:
+```go
+ type Person struct {
+  name string
+  age int
+  job string
+  salary int
+}
+```
+
+**Accessing Values**
+
+Accessing Struct by passing require argument or key to return values.
+
+**Snippets**:
+```go
+package main
+import ("fmt")
+
+type Person struct {
+  name string
+  age int
+  job string
+  salary int
+}
+
+func main() {
+  var pers1 Person
+  var pers2 Person
+
+  // Pers1 specification
+  pers1.name = "Hege"
+  pers1.age = 45
+  pers1.job = "Teacher"
+  pers1.salary = 6000
+
+  // Pers2 specification
+  pers2.name = "Cecilie"
+  pers2.age = 24
+  pers2.job = "Marketing"
+  pers2.salary = 4500
+
+  // Access and print Pers1 info
+  fmt.Println("Name: ", pers1.name)
+  fmt.Println("Age: ", pers1.age)
+  fmt.Println("Job: ", pers1.job)
+  fmt.Println("Salary: ", pers1.salary)
+
+  // Access and print Pers2 info
+  fmt.Println("Name: ", pers2.name)
+  fmt.Println("Age: ", pers2.age)
+  fmt.Println("Job: ", pers2.job)
+  fmt.Println("Salary: ", pers2.salary)
+}
+```
+
+**Output**
+```
+Name: Hege
+Age: 45
+Job: Teacher
+Salary: 6000
+Name: Cecilie
+Age: 24
+Job: Marketing
+Salary: 4500
+```
+
+#### Maps
+
+`Maps` are used to store data values in `key:value` pairs. Each element in a map is a `key:value` pair. A map is an unordered and changeable collection that does not allow duplicates. The length of a map is the number of its elements. You can find it using the `len()` function. The default value of a map is nil. Maps hold references to an underlying hash table. Go has multiple ways for creating maps.
+
+**Create Maps Using `var` and `:=`**
+
+**Syntax**:
+```go
+var a = map[KeyType]ValueType{key1:value1, key2:value2,...}
+b := map[KeyType]ValueType{key1:value1, key2:value2,...}
+```
+
+**Snippets**:
+```go
+package main
+import ("fmt")
+
+func main() {
+  var a = map[string]string{"brand": "Ford", "model": "Mustang", "year": "1964"}
+  b := map[string]int{"Oslo": 1, "Bergen": 2, "Trondheim": 3, "Stavanger": 4}
+
+  fmt.Printf("a\t%v\n", a)
+  fmt.Printf("b\t%v\n", b)
+}
+```
+
+**Output**:
+```
+a   map[brand:Ford model:Mustang year:1964]
+b   map[Bergen:2 Oslo:1 Stavanger:4 Trondheim:3]
+```
+
+**Create Maps Using `make()` Function:**
+
+**Syntax**:
+```go
+var a = make(map[KeyType]ValueType)
+b := make(map[KeyType]ValueType)
+```
+
+**Snippets**:
+```go
+package main
+import ("fmt")
+
+func main() {
+  var a = make(map[string]string) // The map is empty now
+  a["brand"] = "Ford"
+  a["model"] = "Mustang"
+  a["year"] = "1964"
+                                 // a is no longer empty
+  b := make(map[string]int)
+  b["Oslo"] = 1
+  b["Bergen"] = 2
+  b["Trondheim"] = 3
+  b["Stavanger"] = 4
+
+  fmt.Printf("a\t%v\n", a)
+  fmt.Printf("b\t%v\n", b)
+}
+```
+
+**Ouput**:
+```
+a   map[brand:Ford model:Mustang year:1964]
+b   map[Bergen:2 Oslo:1 Stavanger:4 Trondheim:3]
+```
+
+**Create an Empty Map**
+
+There are two ways to create an empty map. One is by using the `make()` function and the other is by using the following syntax.
+
+**Syntax**:
+```go
+var a map[KeyType]ValueType
+```
+
+**Snippets**:
+```go
+package main
+import ("fmt")
+
+func main() {
+  var a = make(map[string]string)
+  var b map[string]string
+
+  fmt.Println(a == nil)
+  fmt.Println(b == nil)
+}
+```
+
+**Output**:
+```
+false
+true
+```
+
+**Allowed Key Types**
+
+The map key can be of any data type for which the equality operator (==) is defined. These include:
+
+- Booleans
+- Numbers
+- Strings
+- Arrays
+- Pointers
+- Structs
+- Interfaces (as long as the dynamic type supports equality)
+
+Invalid key types are:
+
+- Slices
+- Maps
+- Functions
+
+These types are invalid because the equality operator `==` is not defined for them.
+
+**Access Map Elements**
+
+**Syntax**:
+```go
+value = map_name[key]
+```
+
+**Snippets**:
+```go
+package main
+import ("fmt")
+
+func main() {
+  var a = make(map[string]string)
+  a["brand"] = "Ford"
+  a["model"] = "Mustang"
+  a["year"] = "1964"
+
+  fmt.Printf(a["brand"])
+}
+```
+
+**Output**:
+```
+Ford
+```
+
+**Update and Add Map Elements**
+
+**Syntax**:
+```go
+map_name[key] = value
+```
+
+**Snippets**:
+```go
+package main
+import ("fmt")
+
+func main() {
+  var a = make(map[string]string)
+  a["brand"] = "Ford"
+  a["model"] = "Mustang"
+  a["year"] = "1964"
+
+  fmt.Println(a)
+
+  a["year"] = "1970" // Updating an element
+  a["color"] = "red" // Adding an element
+
+  fmt.Println(a)
+}
+```
+
+**Output**:
+```
+map[brand:Ford model:Mustang year:1964]
+map[brand:Ford color:red model:Mustang year:1970]
+```
+
+**Remove Element from Map**
+
+Removing elements is done using the `delete()` function.
+
+**Syntax**:
+```go
+delete(map_name, key)
+```
+
+**Snippets**:
+```go
+package main
+import ("fmt")
+
+func main() {
+  var a = make(map[string]string)
+  a["brand"] = "Ford"
+  a["model"] = "Mustang"
+  a["year"] = "1964"
+
+  fmt.Println(a)
+
+  delete(a,"year")
+
+  fmt.Println(a)
+}
+```
+
+**Output**:
+```
+map[brand:Ford model:Mustang year:1964]
+map[brand:Ford model:Mustang]
+```
+
+**Check For Specific Elements in a Map**
+
+**Syntax**:
+```go
+val, ok :=map_name[key]
+```
+
+**Snippets**:
+```go
+package main
+import ("fmt")
+
+func main() {
+  var a = map[string]string{"brand": "Ford", "model": "Mustang", "year": "1964", "day":""}
+
+  val1, ok1 := a["brand"] // Checking for existing key and its value
+  val2, ok2 := a["color"] // Checking for non-existing key and its value
+  val3, ok3 := a["day"]   // Checking for existing key and its value
+  _, ok4 := a["model"]    // Only checking for existing key and not its value
+
+  fmt.Println(val1, ok1)
+  fmt.Println(val2, ok2)
+  fmt.Println(val3, ok3)
+  fmt.Println(ok4)
+}
+```
+
+**Output**:
+```
+Ford true
+ false
+ true
+true 
+```
+
+learn more: [Maps](https://www.w3schools.com/go/go_maps.php)
+
 ### Input / Output
 
 #### Input
@@ -253,6 +587,14 @@ fmt.Scan(&name)
 
 #### Output 
 
+Go language has three functions to output text:
+
+- Printf()
+- Println()
+- Print()
+
+##### Printf()
+
 Using `Printf()` formating function defined in fmt package, 
 to display output on screen.
 
@@ -266,6 +608,50 @@ Here, we use `PrintF()` function display `Hello, Aniket` accessing name variable
 `%d`: for digit
 `%f`: for floating-point number
 
+Learn more about:[Formating Verbs](https://www.w3schools.com/go/go_formatting_verbs.php)
+
+##### Println()
+
+The `Println()` function that a whitespace is added between the arguments, and a newline is added at the end
+
+**Snippets**:
+```go
+package main
+import ("fmt")
+
+func main() {
+  var i,j string = "Hello","World"
+
+  fmt.Println(i,j)
+}
+```
+
+**Output**:
+```
+Hello World
+```
+
+##### Print()
+
+The Print() function prints its arguments with their default format.
+
+**Snippets**:
+```go
+package main
+import ("fmt")
+
+func main() {
+  var i,j string = "Hello","World"
+
+  fmt.Print(i)
+  fmt.Print(j)
+}
+```
+
+**Output**:
+HelloWorld
+```
+```
 
 ### Operators
 

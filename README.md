@@ -771,9 +771,9 @@ func main() {
 
 Slices are similar to arrays, but are more powerful and flexible. Like arrays, slices are also used to store multiple values of the same type in a single variable. However, unlike arrays, the length of a slice can grow and shrink as you see fit. In Go, there are several ways to create a slice:
 
-- Using the []datatype{values} format
+- Using the `[]datatype{values}` format
 - Create a slice from an array
-- Using the make() function
+- Using the `make()` function
 
 ##### Create a Slice With []datatype{values}
 
@@ -802,8 +802,8 @@ The code above declares a slice of integers of length 3 and also the capacity of
 
 In Go, there are two functions that can be used to return the length and capacity of a slice:
 
-- len() function - returns the length of the slice (the number of elements in the slice)
-- cap() function - returns the capacity of the slice (the number of elements the slice can grow or shrink to)
+- `len()` function - returns the length of the slice (the number of elements in the slice)
+- `cap()` function - returns the capacity of the slice (the number of elements the slice can grow or shrink to)
 
 This example shows how to create slices using the `[]datatype{values}` format:
 

@@ -649,8 +649,8 @@ func main() {
 ```
 
 **Output**:
-HelloWorld
 ```
+HelloWorld
 ```
 
 ### Operators
